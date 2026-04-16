@@ -1,0 +1,39 @@
+.header 
+    height: 100px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25)
+    &__nav 
+        width: 589px
+        ul
+            list-style-type: none
+            display: flex
+            justify-content: space-between
+            li 
+                position: relative
+                font-size: 13px
+                font-weight: 700
+                text-transform: uppercase
+                cursor: pointer
+                a
+                    text-decoration: none
+                    color: rgba(255, 255, 255, 0.75)
+                    transition: all .6s
+                    &:hover 
+                        color: $main-color
+                
+
+.hamburger
+    width: 26px
+    height: 22px
+    flex-direction: column
+    justify-content: space-between
+    display: none
+    span
+        display: block
+        width: 100%
+        height: 2px
+        background-color: #ffffff
+
+        

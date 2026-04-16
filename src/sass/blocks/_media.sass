@@ -1,0 +1,104 @@
+@media (max-width: 1200px) 
+    .container 
+        max-width: 960px
+    .projects
+        grid-template-columns: repeat(auto-fit, minmax(355px, auto))
+    .footer
+        
+    
+@media (max-width: 992px)
+    .container 
+        max-width: 720px
+    .header
+        &__nav 
+            width: 430px
+    .promo
+        &__title 
+            width: 693px
+            font-size: 45px
+        &__descr
+            width: 641px
+            font-size: 16px
+    /** .footer
+        &__wrapper
+            padding: 71px 5% 107px 10%
+        &__item
+            &_wd329
+                width: 236px **/
+
+@media (max-width: 768px)
+    .container 
+        max-width: 540px
+    .header
+        &__nav 
+            width: 330px
+            ul li 
+                font-size: 11px
+    .promo
+        &__title 
+            width: 550px
+            font-size: 35px
+        &__descr
+            width: 500px
+            font-size: 14px
+    .staff .container
+        max-width: 550px
+    /** .footer
+        &__wrapper
+            padding: 71px 5% 107px 5%
+        &__item
+            &_wd329
+                width: 173px **/
+
+@media (max-width: 576px)
+    .container 
+        width: 400px
+    .header
+        min-width: 300px
+        margin: 0 auto
+        justify-content: space-around
+        &__nav
+            display: none
+    .hamburger
+        display: flex
+    .promo
+        &__title 
+            width: 380px
+            font-size: 28px
+        &__descr
+            width: 380px
+            font-size: 12px
+    .staff
+        &__wrapper
+            justify-content: center
+    .footer
+        &__wrapper
+            flex-wrap: wrap
+            justify-content: center
+        &__item
+            width: 279px
+            &:first-child
+                margin-top: 30px
+            &:nth-child(2)
+                order: -1
+            &:last-child
+                margin-top: 30px
+
+@media (max-width: 448px)
+    .container 
+        width: 300px
+    .promo 
+        &__title
+            width: 300px
+            font-size: 21px
+        &__descr
+            width: 300px
+            font-size: 10px
+    .projects 
+        grid-template-columns: repeat(auto-fit,minmax(320px,auto));   
+    //.staff .container
+    //  width: 300px
+
+    /** .footer
+        &__wrapper
+            justify-content: center **/

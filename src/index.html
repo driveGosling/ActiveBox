@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="menu">
+        <div class="menu__block">
+            <div class="menu__close">
+                <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.1568 14.5231L28.4489 3.23075C29.1837 2.49623 29.1837 1.30861 28.4489 0.574085C27.7144 -0.160437 26.5267 -0.160437 25.7922 0.574085L14.4998 11.8665L3.20781 0.574085C2.47295 -0.160437 1.28567 -0.160437 0.551149 0.574085C-0.183717 1.30861 -0.183717 2.49623 0.551149 3.23075L11.8432 14.5231L0.551149 25.8155C-0.183717 26.55 -0.183717 27.7376 0.551149 28.4721C0.917206 28.8385 1.39852 29.0226 1.87948 29.0226C2.36045 29.0226 2.84141 28.8385 3.20781 28.4721L14.4998 17.1798L25.7922 28.4721C26.1586 28.8385 26.6396 29.0226 27.1205 29.0226C27.6015 29.0226 28.0825 28.8385 28.4489 28.4721C29.1837 27.7376 29.1837 26.55 28.4489 25.8155L17.1568 14.5231Z" fill="black"></path></svg>
+            </div>
+            <nav class="menu__nav">
+                <ul>
+                    <li class="menu__link"><a href="#">Features</a></li>
+                    <li class="menu__link"><a href="#">Works</a></li>
+                    <li class="menu__link"><a href="#">Team</a></li>
+                    <li class="menu__link"><a href="#">Testimonials</a></li>
+                    <li class="menu__link"><a href="#">Download</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menu__overlay"></div>
+    </div>
+
+    <section class="promo">
+        <div class="container">
+            <header class="header">
+                <div class="header__logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="189" height="24" viewBox="0 0 189 24">
+                        <image id="ActiveBox" width="189" height="24" xlink:href="data:img/png;base64,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"/>
+                    </svg>                      
+                </div>
+
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav class="header__nav">
+                    <ul>
+                        <li class="header__link"><a href="#">Features</a></li>
+                        <li class="header__link"><a href="#">Works</a></li>
+                        <li class="header__link"><a href="#">Team</a></li>
+                        <li class="header__link"><a href="#">Testimonials</a></li>
+                        <li class="header__link"><a href="#">Download</a></li>
+                    </ul>
+                </nav>
+            </header>
+    
+            <h1 class="promo__title">
+                Your Favorite One Page
+                Multi Purpose Template
+            </h1>
+            <div class="promo__descr">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna
+                vel scelerisque nisl consectetur et.
+            </div>
+    
+            <button class="btn promo__btn">Find Out More</button>
+        </div>
+    </section>
+
+    <main>
+        <section class="advantages">
+            <div class="container">
+                <div class="advantages__grid">
+                    <div class="advantages__grid-item">
+                        <div class="advantages__grid-img">
+                            <img src="icons/advantages/customised.png" alt="customised">
+                        </div>
+                        <div class="advantages__grid-title">Easily Customised</div>
+                        <div class="advantages__grid-descr">
+                            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.
+                        </div>
+                    </div>
+                    <div class="advantages__grid-item">
+                        <div class="advantages__grid-img">
+                            <img src="icons/advantages/responsive.png" alt="responsive">
+                        </div>
+                        <div class="advantages__grid-title">Responsive REady</div>
+                        <div class="advantages__grid-descr">
+                            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.
+                        </div>
+                    </div>
+                    <div class="advantages__grid-item">
+                        <div class="advantages__grid-img">
+                            <img src="icons/advantages/design.png" alt="design">
+                        </div>
+                        <div class="advantages__grid-title">Modern Design</div>
+                        <div class="advantages__grid-descr">
+                            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.
+                        </div>
+                    </div>
+                    <div class="advantages__grid-item">
+                        <div class="advantages__grid-img">
+                            <img src="icons/advantages/code.png" alt="code">
+                        </div>
+                        <div class="advantages__grid-title">Clean Code</div>
+                        <div class="advantages__grid-descr">
+                            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.
+                        </div>
+                    </div>
+                    <div class="advantages__grid-item">
+                        <div class="advantages__grid-img">
+                            <img src="icons/advantages/ship.png" alt="ship">
+                        </div>
+                        <div class="advantages__grid-title">Ready to Ship</div>
+                        <div class="advantages__grid-descr">
+                            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.
+                        </div>
+                    </div>
+                    <div class="advantages__grid-item">
+                        <div class="advantages__grid-img">
+                            <img src="icons/advantages/download.png" alt="download">
+                        </div>
+                        <div class="advantages__grid-title">Download for Free</div>
+                        <div class="advantages__grid-descr">
+                            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+            
+        <section class="projects">
+            <div class="projects__item">
+                <div class="projects__item-back">
+                    <div class="projects__item-title">Project Name</div>
+                    <div class="projects__item-descr">User Interface Design</div>
+                </div>
+                <img src="img/projects/0.jpg" alt="0" class="projects__item-img">
+            </div>
+            <div class="projects__item">
+                <div class="projects__item-back">
+                    <div class="projects__item-title">Project Name</div>
+                    <div class="projects__item-descr">User Interface Design</div>
+                </div>
+                <img src="img/projects/1.jpg" alt="1" class="projects__item-img">
+            </div>
+            <div class="projects__item">
+                <div class="projects__item-back">
+                    <div class="projects__item-title">Project Name</div>
+                    <div class="projects__item-descr">User Interface Design</div>
+                </div>
+                <img src="img/projects/2.jpg" alt="2" class="projects__item-img">
+            </div>
+            <div class="projects__item">
+                <div class="projects__item-back">
+                    <div class="projects__item-title">Project Name</div>
+                    <div class="projects__item-descr">User Interface Design</div>
+                </div>
+                <img src="img/projects/3.jpg" alt="3" class="projects__item-img">
+            </div>
+            <div class="projects__item">
+                <div class="projects__item-back">
+                    <div class="projects__item-title">Project Name</div>
+                    <div class="projects__item-descr">User Interface Design</div>
+                </div>
+                <img src="img/projects/4.jpg" alt="4" class="projects__item-img">
+            </div>
+            <div class="projects__item">
+                <div class="projects__item-back">
+                    <div class="projects__item-title">Project Name</div>
+                    <div class="projects__item-descr">User Interface Design</div>
+                </div>
+                <img src="img/projects/5.jpg" alt="5" class="projects__item-img">
+            </div>
+            <div class="projects__item">
+                <div class="projects__item-back">
+                    <div class="projects__item-title">Project Name</div>
+                    <div class="projects__item-descr">User Interface Design</div>
+                </div>
+                <img src="img/projects/6.jpg" alt="6" class="projects__item-img">
+            </div>
+            <div class="projects__item">
+                <div class="projects__item-back">
+                    <div class="projects__item-title">Project Name</div>
+                    <div class="projects__item-descr">User Interface Design</div>
+                </div>
+                <img src="img/projects/7.jpg" alt="7" class="projects__item-img">
+            </div>
+        </section>
+    
+        <section class="staff">
+            <div class="container">
+                <div class="staff__wrapper">
+                    <div class="staff__item">
+                        <div class="staff__item-img">
+                            <img src="img/staff/RuthWoods.jpg" alt="RuthWoods">
+                        </div>
+                        <div class="staff__item-name">Ruth Woods</div>
+                        <div class="staff__item-position">Founder, CEO</div>
+                        <div class="staff__item-descr">
+                            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.
+                        </div>
+                        <div class="social staff__social">
+                            <div class="social__item">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
+                            </div>
+                            <div class="social__item">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+                            </div>
+                            <div class="social__item">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" class="svg-inline--fa fa-linkedin fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="staff__item">
+                        <div class="staff__item-img">
+                            <img src="img/staff/TimothyReed.jpg" alt="TimothyReed">
+                        </div>
+                        <div class="staff__item-name">Timothy Reed</div>
+                        <div class="staff__item-position">Co-Founder, Developer</div>
+                        <div class="staff__item-descr">
+                            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.
+                        </div>
+                        <div class="social staff__social">
+                            <div class="social__item">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
+                            </div>
+                            <div class="social__item">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+                            </div>
+                            <div class="social__item">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" class="svg-inline--fa fa-linkedin fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="staff__item">
+                        <div class="staff__item-img">
+                            <img src="img/staff/VictoriaValdez.jpg" alt="VictoriaValdez">
+                        </div>
+                        <div class="staff__item-name">Victoria Valdez</div>
+                        <div class="staff__item-position">UI Designer</div>
+                        <div class="staff__item-descr">
+                            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.
+                        </div>
+                        <div class="social staff__social">
+                            <div class="social__item">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
+                            </div>
+                            <div class="social__item">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+                            </div>
+                            <div class="social__item">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" class="svg-inline--fa fa-linkedin fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="staff__item">
+                        <div class="staff__item-img">
+                            <img src="img/staff/BeverlyLittle.jpg" alt="BeverlyLittle">
+                        </div>
+                        <div class="staff__item-name">Beverly Little</div>
+                        <div class="staff__item-position">Data Scientist</div>
+                        <div class="staff__item-descr">
+                            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.
+                        </div>
+                        <div class="social staff__social">
+                            <div class="social__item">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
+                            </div>
+                            <div class="social__item">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+                            </div>
+                            <div class="social__item">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" class="svg-inline--fa fa-linkedin fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="">
+
+        </section>
+    
+        <section class="download">
+            <h2 class="title">Are You Ready to Start? Download Now For Free!</h2>
+            <h3 class="download__subtitle">Fusce dapibus, tellus ac cursus commodo</h3>
+            <button class="btn btn_long download__btn">Download Here</button>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__item">
+                <div class="footer__item-location">
+                    <div class="footer__item-title">Location</div>
+                    <div class="footer__item-info">
+                        3481 Melrose Place
+                        Beverly Hills, CA 90210
+                    </div>
+                </div>
+            </div>
+            <div class="footer__item">
+                <div class="footer__item-social">
+                    <div class="footer__item-title">Share with Love</div>
+                    <div class="footer__item-info">
+                        <div class="social social_white">
+                            <div class="social__item">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
+                            </div>
+                            <div class="social__item">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+                            </div>
+                            <div class="social__item">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" class="svg-inline--fa fa-linkedin fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__item">
+                <div class="footer__item-about">
+                    <div class="footer__item-title">About ActiveBox</div>
+                    <div class="footer__item-info">
+                        Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__copyright">
+            <div class="footer__copyright-text">
+                Copyright © 2015 ActiveBox. All Rights Reserved
+                Made with <span class="heart">❤</span> <span class="white">by Kamal Chaneman</span>
+            </div>
+        </div>
+        
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
